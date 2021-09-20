@@ -1,0 +1,125 @@
+*
+{
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+	user-select: none;
+}
+
+body
+{
+	--first-color: black;
+	--second-color: white;
+	background-color: var(--first-color);
+	transition: 0.2;
+}
+
+.options
+{
+	position: absolute;
+	left: 1em;
+	top: 1em;
+	width: 15em;
+	z-index: 3;
+	box-sizing: border-box;
+	border: 1px solid var(--second-color);
+	color: var(--second-color);
+	text-align: center;
+	background-color: var(--first-color);
+	opacity: 0.7;
+	transition: left 0.4s;
+}
+
+.generate
+{
+	color: red;
+}
+
+.hideOptions
+{
+	position: absolute;
+	right: -3.5em;
+	width: 3em;
+	height: 3em;
+	box-sizing: border-box;
+	border: 1px solid var(--second-color);
+	line-height: 3em;
+	text-align: center;
+	transition: 0.2s;
+}
+
+.predefinedOptionsSpan
+{
+	margin-top: 0.5em;
+	display: block;
+}
+
+.checkboxes div
+{
+	width: calc(100% - 2em);
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+	color: var(--second-color);
+}
+
+.options span
+{
+	color: var(--second-color);
+}
+
+.additionalRule, .additionalBehavior, .predefinedOptions
+{
+	width: calc(100% - 2em);
+	margin-bottom: 0.5em;
+	background-color: var(--first-color);
+	color: var(--second-color);
+}
+
+.additionalRule:focus
+{
+	outline: none;
+}
+
+.button
+{
+	width: calc(100% - 2em);
+	margin-left: 1em;
+	margin-bottom: 1em;
+	box-sizing: border-box;
+	border: 1px solid var(--second-color);
+	height: 2em;
+	line-height: 2em;
+	transition: 0.2s;
+}
+
+.button:hover, .hideOptions:hover
+{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.options input[type="range"]
+{
+	width: calc(100% - 2em);
+	margin-bottom: 0.5em;
+}
+
+.canvas, .canvas2
+{
+	position: absolute;
+}
+
+.canvas2
+{
+	z-index: 1;
+	left: 0;
+	top: 0;
+	transform-origin: left top;
+}
+
+.canvas
+{
+	z-index: 2;
+	left: 0;
+	top: 0;
+	transform-origin: left top;
+}

@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>fractals generator</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<script src="script.js" defer></script>
+</head>
+<body>
+	<div class="options">
+		<div class="hideOptions">hide</div>
+		<span class="predefinedOptionsSpan">try one of predefined options:</span>
+		<select class="predefinedOptions">
+			<option value="none">none</option>
+			<option value="sierpinski#1">sierpinski gasket</option>
+			<option value="square#1">square #1</option>
+			<option value="square#2">square #2</option>
+			<option value="square#3">square #3</option>
+			<option value="pentagon#1">pentagon #1</option>
+			<option value="pentagon#2">pentagon #2</option>
+			<option value="pentagon#3">pentagon #3</option>
+			<option value="pentagon#4">pentagon #4</option>
+			<option value="hexagon#1">hexagon #1</option>
+		</select>
+		<div class="checkboxes">
+			<div><label><input class="showVertexes" type="checkbox" checked> show vertexes</label></div>
+			<div><label><input class="inverseColors" type="checkbox"> light theme</label></div>
+		</div>
+		<span>additional rule:</span>
+		<select class="additionalRule">
+			<option value="0">none</option>
+			<option value="1">the same vertex cannot be chosen twice</option>
+			<option value="2">vertex next to the vertex that was chosen twice cannot be chosen</option>
+			<option value="3">vertex two places away from previously chosen vertex cannot be chosen</option>
+		</select>
+		<span>additional behavior:</span>
+		<select class="additionalBehavior">
+			<option value="0">none</option>
+			<option value="1">rotate only if first vertex is chosen</option>
+		</select>
+		<span class="rotateValueSpan">rotate value: 0</span>
+		<input class="rotateValue" value="0" step="5" type="range" min="-180" max="180">
+		<span class="jumpRatioSpan">jump ratio: 0.5</span>
+		<input class="jumpRatio" value="0.5" step="0.01" type="range" min="0.1" max="0.9">
+		<span class="iterationsNumberSpan">iterations: 15000</span>
+		<input class="iterationsNumber" value="15000" step="1000" type="range" min="1000" max="50000">
+		<div class="button generate">generate</div>
+		<div class="button clearCanvas">clear canvas</div>
+		<div class="button addVertex">add vertex</div>
+		<div class="button clearVertexes">clear vertexes</div>
+		<div class="button organizeVertexes">organize vertexes</div>
+		<div class="button moveVertexesCloser">move vertexes closer</div>
+		<div class="button moveVertexesFurther">move vertexes further</div>
+	</div>
+	<canvas class="canvas"></canvas>
+	<canvas class="canvas2"></canvas>
+</body>	
+</html>
