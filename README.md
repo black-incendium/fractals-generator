@@ -3,9 +3,9 @@ Fractal generator is javascript project made in free-time. It uses chaos theory 
 
 ## live version
 Live version of project is available on this page in projects section:\
-[jakubkolodziej.com](jakubkolodziej.com 'homepage')\
+[jakubkolodziej.com](https://www.jakubkolodziej.com 'homepage')\
 direct link:\
-[jakubkolodziej.com/fractals-generator](jakubkolodziej.com/fractals-generator 'direct project link')
+[jakubkolodziej.com/fractals-generator](https://www.jakubkolodziej.com/fractals-generator 'direct project link')
 
 ------------
 
