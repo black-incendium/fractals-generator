@@ -7,6 +7,11 @@ Live version of project is available on this page in projects section:\
 direct link:\
 [jakubkolodziej.com/fractals-generator](jakubkolodziej.com/fractals-generator 'direct project link')
 
-## contact
+------------
+
+### contact
 If you encounter bug in project, have suggestion, or want to contact me for different reasons, feel free to do so.
 My mail: **contact@jakubkolodziej.com**
+
+### license
+Project is under [NSN license](.../LICENSE.md)
